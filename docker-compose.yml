@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    links:
+      - postgres
+    ports:
+      - 3000:3000
+
+  postgres:
+    container_name: database
+    image: postgres
+    restart: on-failure
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - '5432:5432'
+    volumes:
+      - car_rent_api:/var/lib/postgresql/data
+
+volumes:
+  category_task:
