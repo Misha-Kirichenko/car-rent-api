@@ -11,7 +11,6 @@ import {
 } from 'src/common/helpers';
 import { QueryBuilder } from 'src/common/classes/queryBuilder';
 import { CarAvailable, CarCost, CarInfo } from './types-and-interfaces';
-import { Query } from 'pg';
 
 @Injectable()
 export class RentService {
