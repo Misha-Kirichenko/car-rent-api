@@ -33,4 +33,4 @@ services:
       - car_rent_api:/var/lib/postgresql/data
 
 volumes:
-  category_task:
+  car_rent_api:

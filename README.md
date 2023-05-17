@@ -23,5 +23,11 @@
 </ul>
 <p><b>Example: </b> 15 days => $1415</p>
 <p><b>Maximum amount of days</b>: 30</p>
-</ul>
+<h2 align="center">API installation and run instructions</h1>
 <hr>
+<ul>
+  <li>Clone repository</li>
+  <li>Create .env file. Take example.env as example</li>
+  <li>Build docker container via: <code>docker compose up --build</code></li>
+  <li>Open browser at http://localhost:3000/api/docs</li>
+</ul>
