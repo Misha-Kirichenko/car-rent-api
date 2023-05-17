@@ -11,7 +11,7 @@
     <li>Check if car is available for the requested period</li>
     <li>Calculate the cost of the lease for the requested period</li>
     <li>Create a car rental session</li>
-    <li>Generete a report about car/cars usage per month</li>
+    <li>Get report about car/cars usage per month</li>
   </ul>
 <h2 align="center">Price calculation principles</h2>
 <ul>
