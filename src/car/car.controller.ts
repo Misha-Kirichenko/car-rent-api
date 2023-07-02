@@ -9,7 +9,7 @@ import {
 import { Controller, Param, Get, Query, HttpStatus } from '@nestjs/common';
 import { CarService } from './car.service';
 import { IdDto, MonthDto } from './dto';
-import { CarMonthlyReport } from './types-and-interfaces';
+import { CarMonthlyReport } from './types';
 
 @Controller('cars')
 export class CarController {

@@ -2,12 +2,9 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { QueryBuilder } from '@classes/queryBuilder';
 import { formatDate, getDayDiff } from '@helpers';
 import { ConfigService } from '@nestjs/config';
-import {
-  CarReport,
-  CarMonthlyReport,
-  CarEmploymentInfo,
-} from './types-and-interfaces';
-import { CarEmploymentCheck } from './types-and-interfaces/carEmploymentСheck.interface';
+import { CarReport, CarMonthlyReport } from './types';
+import { CarEmploymentInfo } from './interfaces';
+import { CarEmploymentCheck } from './interfaces/carEmploymentСheck.interface';
 
 @Injectable()
 export class CarService {

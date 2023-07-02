@@ -10,7 +10,8 @@ import {
   countRentalPrice,
 } from 'src/common/helpers';
 import { QueryBuilder } from 'src/common/classes/queryBuilder';
-import { CarAvailable, CarCost, CarInfo } from './types-and-interfaces';
+import { CarAvailable, CarInfo } from './interfaces';
+import { CarCost } from './types';
 
 @Injectable()
 export class RentService {

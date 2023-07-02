@@ -17,7 +17,8 @@ import {
 } from '@nestjs/common';
 import { DatesDto, IdDto } from 'src/common/dto';
 import { RentService } from './rent.service';
-import { CarAvailable, CarCost, CarInfo } from './types-and-interfaces';
+import { CarAvailable, CarInfo } from './interfaces';
+import { CarCost } from './types';
 import { CarAvailiableDto } from './dto';
 
 @ApiTags('Rental')
